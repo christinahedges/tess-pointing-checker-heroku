@@ -1,4 +1,5 @@
 ipywidgets
+ipykernel
 numpy
 matplotlib
 voila
