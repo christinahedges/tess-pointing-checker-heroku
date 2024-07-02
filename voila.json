@@ -1,0 +1,8 @@
+{
+    "VoilaConfiguration": {
+        "file_allowlist": [
+            ".*.(ico|js|png|jpg|gif|svg|pdf)"
+        ],
+        "show_tracebacks": true
+    }
+}
