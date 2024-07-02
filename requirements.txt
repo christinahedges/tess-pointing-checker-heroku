@@ -2,3 +2,4 @@ ipywidgets
 numpy
 matplotlib
 tesswcs
+voila
