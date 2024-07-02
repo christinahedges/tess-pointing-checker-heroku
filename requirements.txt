@@ -4,3 +4,4 @@ ipympl
 numpy
 matplotlib
 voila
+tesswcs
