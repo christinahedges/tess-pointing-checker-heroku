@@ -119,8 +119,9 @@ def calculate_allowable_map(dlong, decl, roll, ylim=15, ndays=14):
     return allowable
 
 def build_grid():
-    dlong, decl = np.mgrid[-180:180, -90:90]
-    rolls = np.arange(-180, 180, 10)
+    dlong, decl = np.mgrid[-180:179, -90:90]
+    dlong, decl = dlong[::2, ::2], decl[::2, ::2]
+    rolls = np.arange(-180, 179, 5)
     r = []
 
     a = np.zeros((dlong.shape[0], decl.shape[1], rolls.shape[0]))
