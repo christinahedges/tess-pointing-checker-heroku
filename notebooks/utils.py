@@ -119,12 +119,10 @@ def calculate_allowable_map(dlong, decl, roll, ylim=15, ndays=14):
     return allowable
 
 def build_grid():
-    dlong, decl = np.mgrid[-180:179, -90:90]
+    dlong, decl = np.mgrid[-180:179, -90:89]
     dlong, decl = dlong[::2, ::2], decl[::2, ::2]
     rolls = np.arange(-180, 179, 5)
     r = []
-
-    a = np.zeros((dlong.shape[0], decl.shape[1], rolls.shape[0]))
     for kdx, roll in enumerate(rolls):
         with warnings.catch_warnings():
             warnings.simplefilter('ignore')
